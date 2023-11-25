@@ -1,0 +1,16 @@
+.input-text {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+}
+.lg {
+  padding: 1em 2em;
+  font-size: 1.3rem;
+}
+.md {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+}
+.sm {
+  padding: 0.2em 0.5em;
+  font-size: 0.7rem;
+}

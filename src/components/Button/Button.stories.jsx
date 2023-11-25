@@ -3,11 +3,32 @@ import Button from './Button.jsx';
 import React from 'react';
 
 export default {
-  title: 'Button',
+  title: 'form/control/Button',
   component: Button,
+  tags: ['autodocs'],
+  args: {
+    children: 'Button',
+  },
 };
 
-export const Primary = () => <Button variant='primary'>Submit</Button>;
-export const Secondary = () => <Button variant='secondary'>Submit</Button>;
-export const Success = () => <Button variant='success'>Submit</Button>;
-export const Danger = () => <Button variant='danger'>Submit</Button>;
+const Template = (args) => <Button {...args} />;
+
+export const Primary = Template.bind({});
+Primary.args = {
+  variant: 'primary',
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  variant: 'secondary',
+};
+
+export const Success = Template.bind({});
+Success.args = {
+  variant: 'success',
+};
+
+export const Danger = Template.bind({});
+Danger.args = {
+  variant: 'danger',
+};
