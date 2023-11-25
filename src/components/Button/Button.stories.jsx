@@ -16,6 +16,7 @@ export default {
   },
   args: {
     children: 'Text',
+    disabled: false,
   },
 };
 
