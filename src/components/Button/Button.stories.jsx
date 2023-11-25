@@ -1,13 +1,21 @@
-import Button from './Button.jsx';
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
+import Button from './Button';
 
 export default {
   title: 'form/control/Button',
   component: Button,
-  tags: ['autodocs'],
+  argTypes: {
+    variant: {
+      options: ['primary', 'secondary', 'success', 'danger'],
+      control: { type: 'select' },
+      description: 'Type of button and different background-color',
+    },
+    children: {
+      control: { type: 'text' },
+    },
+    onClick: { action: 'clicked' },
+  },
   args: {
-    children: 'Button',
+    children: 'Text',
   },
 };
 

@@ -3,7 +3,6 @@ import Input from './Input';
 export default {
   title: 'form/control/Input',
   component: Input,
-  tags: ['autodocs'],
 };
 
 export const Large = () => (
